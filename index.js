@@ -9,7 +9,7 @@ app.use(cors());
 
 // Api to add data to db
 
-  app.post('/signup', async (req, res) => {
+  app.post('/addu', async (req, res) => {
     try {
       const existingUser = await login.findOne({ email: req.body.email });
       if (existingUser) {
